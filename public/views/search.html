@@ -2,14 +2,14 @@
 <div class="panel panel-default">
 	<div class="panel-body">
 		Filter by: 
-		<select style="height:30px;" ng-model="request">
+		<select style="height:30px;" ng-model="data.request">
 			<option value="0">new</option>
 			<option value="1">featured</option>
 			<option value="2">recent</option>
 			<option value="3">recent (update)</option>
 			<option value="4">top</option>
 		</select>
-		<input type="text" style="width:200px;display:inline;" ng-model="search" placeholder="type to search" class="form-control"/>	
-		<button class="btn btn-sm btn-primary" ng-click="movieSearch(request,search);">Search</button>
+		<input type="text" style="width:200px;display:inline;" ng-model="data.search" placeholder="type to search" class="form-control"/>	
+		<button class="btn btn-sm btn-primary" ng-click="movieSearch(data.request,data.search);">Search</button>
 	</div>
 </div>

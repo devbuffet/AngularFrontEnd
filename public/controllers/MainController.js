@@ -5,6 +5,8 @@
   // controller
   var cntrl = function MainController($scope,$location,movieSvc,$cookieStore) {
     
+  var objData = {request: 0, search: ''};
+
   // validates cookie
   movieSvc.validateCookie();
 
@@ -14,8 +16,7 @@
    };
 
    // set defaults
-   $scope.request = 0;
-   $scope.search = '';
+   $scope.data = objData;
  
   }
 
