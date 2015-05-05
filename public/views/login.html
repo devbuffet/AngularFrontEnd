@@ -1,0 +1,12 @@
+<div ng-show ="data.message" class="alert alert-warning">
+     <strong>{{data.message}}</strong>
+</div>
+<div class='divider'></div>
+<div class='loginBox'>
+<h2 class="form-signin-heading">Please login</h2>
+<label for="inputEmail" class="sr-only">Email address</label>
+<input type="text" ng-model="email" placeholder="enter email address" class="form-control"/>	
+<label for="inputPassword" class="sr-only">Password</label>
+<input type="password" ng-model="password" placeholder="enter password" class="form-control"/>	
+<button class="btn btn-lg btn-primary btn-block" type="submit" ng-click="validateLogin(email,password)">Log in</button>
+</div>

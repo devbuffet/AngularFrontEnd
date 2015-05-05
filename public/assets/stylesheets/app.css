@@ -1,0 +1,31 @@
+.lineBreak
+{
+	margin-top:10px;
+}
+
+.movieCover
+{
+	width: 100px;
+	height: :100px;
+}
+
+.divider
+{
+ 	border-bottom-style: dashed;
+  	border-bottom-color: #e0e0e0;
+}
+
+.bold
+{
+	font-weight: bold;
+}
+
+.loginBox
+{
+	width: 200px;
+}
+
+.floatRight
+{
+	float:right;
+}

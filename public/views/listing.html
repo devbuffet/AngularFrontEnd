@@ -1,0 +1,34 @@
+<div>
+	<h4>{{data.progress}}</h4>
+</div>
+<div class='floatRight' ng-include="'views/loginNav.html'"></div>
+<div class="lineBreak">
+	<a href="#/index" class="btn btn-info">Try Another Search</a>
+</div>
+<div class="lineBreak">
+	<!-- items -->
+	<div ng-repeat="item in data.objMovie">
+		<!-- title -->
+		<div>
+			<div>{{$index + 1}}.<a href="javascript:void(0);" ng-click="movieLookup($index);">{{item.title.replace('Watch','')}}</a></div>
+		</div>
+		<div>
+			<!-- cover -->
+			<a href="javascript:void(0);" ng-click="movieLookup($index);"><img class="movieCover img-rounded" ng-src="{{item.img_src}}"/></a>
+		</div>
+		<!-- status -->
+		<span class="alert alert-warning bold" ng-show="item.status">
+			{{item.status}}
+		</span>
+		<div class="lineBreak">
+			<ul ng-show="!item.status" ng-repeat="obj in item.links track by $index">
+				<li>
+					<a target="_blank" ng-href="{{obj.href}}">{{obj.rating}} %</a>
+				</li>
+			</ul>
+		</div>
+		<h1 class="divider"></h1>
+		<div>
+		</div>
+	</div>
+</div>
