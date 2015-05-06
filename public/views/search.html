@@ -1,6 +1,4 @@
 <div class='floatRight' ng-include="'views/loginNav.html'"></div>
-<div class="panel panel-default">
-	<div class="panel-body">
 		Filter by: 
 		<select style="height:30px;" ng-model="data.request">
 			<option value="0">new</option>
@@ -11,5 +9,3 @@
 		</select>
 		<input type="text" style="width:200px;display:inline;" ng-model="data.search" placeholder="type to search" class="form-control"/>	
 		<button class="btn btn-sm btn-primary" ng-click="movieSearch(data.request,data.search);">Search</button>
-	</div>
-</div>
